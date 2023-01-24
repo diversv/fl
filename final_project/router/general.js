@@ -76,7 +76,7 @@ public_users.get('/author/:author',function (req, res) {
 public_users.get('/title/:title',function (req, res) {
     let myPromise4 = new Promise((resolve,reject) => {
         setTimeout(() => {
-            resolve(`Promise "Getting the book details based on author" resolved`)
+            resolve(`Promise "Getting the book details based on title" resolved`)
         },100)})
     myPromise4.then((succesMessage)=>{
         console.log(succesMessage);
